@@ -34,6 +34,9 @@ async def on_message(message):
     if "shit" in message.content.lower():
         await message.delete()
         await message.channel.send(f'{message.author.mention} you message is incorrect please do not say that')
+    elif "merde" in message.content.lower():
+        await message.delete()
+        await message.channel.send(f'{message.author.mention} you message is incorrect please do not say that')
 
     await bot.process_commands(message)
 
